@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Este projeto foi desenvolvido como parte de um desafio do programa <strong>ONE (Oracle Next Education)</strong> da Alura. A página tem como objetivo criar um cadastro de usuários com funcionalidades de criação, atualização, listagem e exclusão. 🌟
+  Este projeto foi desenvolvido como parte de uma videoaula do canal <strong>DevClub</strong>. A página tem como objetivo criar um cadastro de usuários com funcionalidades de criação, atualização, listagem e exclusão. 🌟
 </p>
 
 <p align="center">
