@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #2e2d4e;
+  width: 430px;  
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+
+
+  & button {
+    border-radius: 30px;
+    transition: 0.3s;
+    background-color: [object object];
+    background-image: radial-gradient(circle at 100% 0%, rgba(94, 138, 243, 1) 15%, rgb(230, 97, 214));
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    color: #f5f2f7;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }  
+
+  & button:hover {    
+    opacity: .5;
+  }
+
+  & input {
+    border: 1px solid #48456c;
+    border-radius: 30px;
+    height: 40px;
+    background-color: #363653;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    outline: none;
+
+  }
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #50b8e9, #df2bf3);
+  z-index: -2;
+  filter: blur(30px); 
+}
+
+
+form::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: #2e2d4e;
+  border-radius: inherit;
+  z-index: -1;
+  box-shadow: 0px 0px 15px rgba(64, 201, 255, 0.7), 0px 0px 15px rgba(232, 28, 255, 0.7);
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e2d4e;
+  margin: 10px 0; /* Ajustado para margens consistentes */
+  padding: 10px;
+  width: 435px; /* Mesma largura do form */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(64, 201, 255, 0.7), 0px 0px 15px rgba(232, 28, 255, 0.7);
+  box-sizing: border-box; /* Para garantir que o padding não afete a largura */
+
+  & p {
+    color: #fff;
+    font-weight: bold;
+
+    & span {
+      color: #99b1e5;
+      font-weight: normal;
+      padding-left: 5px;
+    }
+  }
+
+  & button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    opacity: .5;
+  }
+}  
+
+& button img {
+  width: 20px;  
+  height: auto;  
+}
+
+
+@media (max-width: 768px) {
+  form {
+    width: 80%; /* Ajuste para telas médias */
+  }
+
+  .card {
+    width: 80%; /* Ajuste para o card */
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%; /* O formulário ocupa 100% da largura da tela */
+  }
+
+  .card {
+    width: 100%; /* O card também ocupa 100% da largura da tela */
+  }
+
+  h1 {
+    font-size: 28px; /* Ajusta o tamanho da fonte em telas pequenas */
+  }
+}
